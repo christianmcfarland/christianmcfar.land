@@ -1,9 +1,9 @@
 <template>
   <q-page>
-    <video width="100%" autoplay loop muted>
-      <source src="~src/assets/highlight-movie.mp4" type="video/mp4" />
-    </video>
+    <MyCarousel />
   </q-page>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MyCarousel from 'src/components/MyCarousel.vue';
+</script>
