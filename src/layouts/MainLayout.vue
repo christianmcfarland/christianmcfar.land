@@ -2,7 +2,7 @@
   <q-layout view="hHh lpR fFf">
     <q-header class="text-white">
       <q-toolbar class="absolute-top">
-        <q-toolbar-title> christianmcfar.land </q-toolbar-title>
+        <q-toolbar-title> Christian McFarland </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -10,7 +10,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer class="bg-primary text-white">
+    <q-footer>
       <FooterCard />
     </q-footer>
   </q-layout>
