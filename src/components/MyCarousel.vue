@@ -1,11 +1,12 @@
 <template>
   <q-carousel
     animated
+    arrows
+    class="my-carousel"
+    infinite
+    swipeable
     v-model="slide"
     @update:model-value="handleClearInterval"
-    navigation
-    infinite
-    class="my-carousel"
   >
     <q-carousel-slide class="q-pa-none relative" :name="1">
       <img
@@ -14,25 +15,24 @@
       />
     </q-carousel-slide>
     <q-carousel-slide :name="2" class="q-pa-none relative">
-      <img
-        class="my-image absolute-center"
-        src="~src/assets/boat-masonboro.jpg"
-      />
+      <img class="my-image absolute-center" src="~src/assets/havoc-boat.jpg" />
     </q-carousel-slide>
     <q-carousel-slide class="q-pa-none relative" :name="3">
       <img
         class="my-image absolute-center"
-        src="~src/assets/masonboro-footsteps.jpg"
+        src="~src/assets/havoc-closeup.jpg"
       />
     </q-carousel-slide>
     <q-carousel-slide class="q-pa-none relative" :name="4">
       <img
         class="my-image absolute-center"
-        src="~src/assets/carolina-beach.jpg"
+        src="~src/assets/camping-masonboro.jpg"
       />
     </q-carousel-slide>
   </q-carousel>
-  <p class="text-center text-caption text-italic">{{ captionText }}</p>
+  <p class="caption-text text-center text-caption text-italic text-white">
+    {{ captionText }}
+  </p>
 </template>
 
 <script setup lang="ts">
@@ -58,11 +58,11 @@ const captionText = computed(() => {
     case 1:
       return 'Miracles in Motion 5k - Saturday, March 25, 2023';
     case 2:
-      return 'Masonboro Island, North Carolina';
+      return 'Wrightsville Beach, North Carolina';
     case 3:
-      return 'Masonboro Island, North Carolina';
+      return 'Havoc, German Shepherd';
     case 4:
-      return 'Carolina Beach, North Carolina';
+      return 'Masonboro Island, North Carolina';
     default:
       return '';
   }
@@ -85,13 +85,6 @@ onUnmounted(() => {
   height: 752px;
 }
 
-.overlay-text {
-  position: absolute;
-  bottom: 0;
-  right: $space-base;
-  z-index: 99;
-}
-
 .my-image {
   filter: brightness(75%);
   @media (max-width: $breakpoint-xs-max) {
@@ -100,5 +93,11 @@ onUnmounted(() => {
   @media (min-width: $breakpoint-sm-max) {
     width: 100%;
   }
+}
+
+.caption-text {
+  font-size: 1rem;
+  position: relative;
+  top: -35px;
 }
 </style>

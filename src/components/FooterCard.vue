@@ -7,13 +7,16 @@
         </div>
       </div>
       <div class="flex q-gutter-md items-center">
-        <a href="www.linkedin.com/in/christian-mcfarland-98a18965">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/christian-mcfarland-98a18965"
+        >
           <q-icon color="dark" size="sm" name="fa-brands fa-linkedin" />
         </a>
-        <a href="https://www.strava.com/athletes/41081379">
+        <a target="_blank" href="https://www.strava.com/athletes/41081379">
           <q-icon color="dark" size="sm" name="fa-brands fa-strava" />
         </a>
-        <a href="https://github.com/christianmcfarland">
+        <a target="_blank" href="https://github.com/christianmcfarland">
           <q-icon color="dark" size="sm" name="fa-brands fa-github" />
         </a>
       </div>
