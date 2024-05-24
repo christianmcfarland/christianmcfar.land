@@ -1,1 +1,12 @@
 // app global css in SCSS form
+.q-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.q-page > .q-page-container {
+  @media (min-width: $breakpoint-sm) {
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,45 @@
+Christian McFarland 
+Wilmington, NC 
+(619) 946-3292
+christianmcfarland@gmail.com
+
+Experience
+Senior Software Engineer 
+CareValidate, Inc.                   02/2023 - 01/2024
+Remote 
+Responsible for building a greenfield SASS platform in the ADA accommodations HR space using TypeScript, Vue, Apollo/GraphQL and PostgreSQL, and another platform for GLP-1 weight loss drug reviews using Next.js, Strapi CMS, and PostgreSQL
+Software Engineer 
+ANDMORE (formerly International Market Centers)                   03/2020 - 11/2022
+Remote 
+Responsible for maintaining software built at RepZio (acquired by ANDMORE in 2020), orchestrating the upgrade from Vue 2 to Vue 3, and starting a new B2B eCommerce platform using TypeScript and Vue
+Software Engineer 
+RepZio, LLC                   02/2019 - 03/2020
+Juno Beach , FL
+Responsible for building a greenfield SASS platform for the furniture, gift, and apparel sales industry using TypeScript and Vue
+Instructor 
+Origin Code Academy                   11/2017 - 12/2018
+San Diego , CA
+Responsible for building internal software solutions for the academy using the MERN stack, monitoring the classroom and answering any questions the students had about the material
+.NET Developer 
+LanTrax, Inc.                   11/2016 - 11/2017
+Buffalo , NY
+Responsible for maintaining email parsers using regular expressions, creating custom reports using SSRS, writing custom endpoints and controllers using VB .NET, and designing and developing interfaces using HTML/CSS/Javascript and jQuery.
+
+Skills
+JavaScript
+TypeScript
+Vue
+React
+Next.js
+Node.js
+Express.js
+REST APIs
+Google Cloud Platform
+Unit Testing
+Tailwind
+
+Education
+Origin Code Academy                   Software Engineering 
+07/2016
+San Diego , CA
+The curriculum included HTML/CSS, JavaScript, jQuery, React, C#, .NET, and SQL
