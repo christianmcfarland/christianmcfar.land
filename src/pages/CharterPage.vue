@@ -2,7 +2,7 @@
   <q-page padding class="skinny-page bg-dark">
     <q-page-container class="q-mt-xl">
       <h2 class="text-white">Off We Go</h2>
-      <q-card class="q-mt-lg">
+      <!-- <q-card class="q-mt-lg">
         <q-btn
           target="_blank"
           href="https://www.getmyboat.com/trips/MYL4AjxY/"
@@ -10,17 +10,16 @@
           class="full-width"
           >Request Charter</q-btn
         >
+      </q-card> -->
+      <q-card class="q-mt-md">
+        <img width="100%" src="~src/assets/dad-boat.jpg" />
       </q-card>
       <div class="lt-sm text-white q-mt-md">{{ content }}</div>
       <div class="gt-sm text-white q-mt-md text-h6">{{ content }}</div>
+
       <q-card class="q-mt-md">
         <img width="100%" src="~src/assets/off-we-go.jpg" />
       </q-card>
-      <!-- <q-card class="q-mt-md">
-        <q-card-section>
-
-        </q-card-section>
-      </q-card> -->
       <q-card class="q-mt-lg">
         <q-btn
           target="_blank"
