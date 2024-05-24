@@ -1,5 +1,5 @@
 <template>
-  <q-page padding class="bg-dark">
+  <q-page padding class="skinny-page bg-dark">
     <q-page-container class="q-mt-xl">
       <h2 class="text-white">Off We Go</h2>
       <q-card class="q-mt-lg">

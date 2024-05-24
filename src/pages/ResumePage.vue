@@ -1,5 +1,5 @@
 <template>
-  <q-page padding class="bg-dark">
+  <q-page padding class="skinny-page bg-dark">
     <q-page-container class="q-mt-xl">
       <h2 class="text-white">Resume</h2>
       <q-card class="q-mt-lg">
@@ -12,7 +12,7 @@
           >Download .pdf</q-btn
         >
       </q-card>
-      <q-card class="q-mt-md">
+      <!-- <q-card class="q-mt-md">
         <q-btn
           href="src/assets/resume.txt"
           download="Christian-McFarland-Resume-2024"
@@ -21,7 +21,7 @@
           class="full-width"
           >Download .txt</q-btn
         >
-      </q-card>
+      </q-card> -->
       <q-card class="q-mt-md">
         <img width="100%" src="~src/assets/resume.jpg" />
       </q-card>
