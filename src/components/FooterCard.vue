@@ -13,11 +13,11 @@
         >
           <q-icon color="dark" size="sm" name="fa-brands fa-linkedin" />
         </a>
-        <a target="_blank" href="https://www.strava.com/athletes/41081379">
-          <q-icon color="dark" size="sm" name="fa-brands fa-strava" />
-        </a>
         <a target="_blank" href="https://github.com/christianmcfarland">
           <q-icon color="dark" size="sm" name="fa-brands fa-github" />
+        </a>
+        <a target="_blank" href="https://www.strava.com/athletes/41081379">
+          <q-icon color="dark" size="sm" name="fa-brands fa-strava" />
         </a>
       </div>
     </q-card-section>
