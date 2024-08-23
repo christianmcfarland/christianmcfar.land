@@ -1,7 +1,7 @@
 <template>
   <q-card flat :bordered="bordered" class="section-card q-ma-sm">
     <q-card-section>
-      <img class="full-width" :src="`src/assets/${imageName}`" />
+      <img class="full-width" :src="`~src/assets/${imageName}`" />
     </q-card-section>
     <q-card-section v-if="content">
       <p>{{ content }}</p>
