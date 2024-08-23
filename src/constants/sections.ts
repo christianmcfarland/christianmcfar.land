@@ -11,7 +11,7 @@ export const sections: Section[] = [
   {
     imageName: 'dad-boat.jpg',
     content:
-      'In 2020, my Dad was diagnosed with a rare brain disease called Corticobasal Degeneration (CBD). Over time, he lost the ability to do things he enjoyed like playing golf and jamming on the piano, but he never lost his smile."',
+      'In 2020, my Dad was diagnosed with a rare brain disease called Corticobasal Degeneration (CBD). Over time, he lost the ability to do things he enjoyed like playing golf and jamming on the piano, but he never lost his smile.',
     link: 'https://www.psp.org/iwanttolearn/corticobasal-degeneration',
     linkText: 'Read more about CBD',
     bordered: true,
