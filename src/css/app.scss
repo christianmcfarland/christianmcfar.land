@@ -1,11 +1,21 @@
 @font-face {
   font-family: yellowtail;
-  src: url(~src/fonts/Yellowtail-Regular.ttf);
+  src: url(/fonts/Yellowtail-Regular.ttf);
 }
 
 @font-face {
-  font-family: roboto;
-  src: url(~src/fonts/RobotoMono-Light.ttf);
+  font-family: roboto-light;
+  src: url(/fonts/RobotoMono-Light.ttf);
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url(/fonts/RobotoMono-Medium.ttf);
+}
+
+@font-face {
+  font-family: roboto-semibold;
+  src: url(/fonts/RobotoMono-SemiBold.ttf);
 }
 
 // declare a class which applies it
@@ -14,9 +24,17 @@
 }
 
 body {
-  font-family: 'roboto';
+  font-family: 'roboto-light';
 }
 
 p {
   font-size: 1rem;
+}
+
+.q-btn__content {
+  font-family: 'roboto-semibold';
+}
+
+.text-overline {
+  font-family: 'roboto-medium';
 }
