@@ -1,12 +1,22 @@
-// app global css in SCSS form
-.skinny-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@font-face {
+  font-family: yellowtail;
+  src: url(~src/fonts/Yellowtail-Regular.ttf);
 }
-.skinny-page > .q-page-container {
-  @media (min-width: $breakpoint-sm) {
-    max-width: 50%;
-  }
+
+@font-face {
+  font-family: roboto;
+  src: url(~src/fonts/RobotoMono-Light.ttf);
+}
+
+// declare a class which applies it
+.font-yellowtail {
+  font-family: 'yellowtail';
+}
+
+body {
+  font-family: 'roboto';
+}
+
+p {
+  font-size: 1rem;
 }

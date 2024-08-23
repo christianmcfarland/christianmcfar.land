@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import SectionCard from 'src/components/SectionCard.vue';
-import { sections } from 'src/constants/layout';
+import { sections } from 'src/constants/sections';
 </script>
 
 <style scoped lang="scss"></style>
