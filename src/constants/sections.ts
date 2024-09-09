@@ -4,7 +4,7 @@ export const sections: Section[] = [
   {
     imageName: 'headshot.jpeg',
     content:
-      'Hi, my name is Christian McFarland. I am a software engineer, USCG licensed captain, owner of a small business "Off We Go Outdoors", dog lover, handyman, amateur blues guitarist, and a recovering League of Legends addict.',
+      'Hi, my name is Christian McFarland. I am a software engineer, USCG licensed captain, owner of a small business "Off We Go Outdoors", dog lover, handyman, amateur blues guitarist, and multisport athlete.',
     link: '',
     bordered: true,
   },
