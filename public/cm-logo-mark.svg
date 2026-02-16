@@ -10,37 +10,18 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath19">
-      <path
-         style="display:none;opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         d="m 59.243989,15.052219 c 0,0 1.801122,0.964886 4.181174,0.643257 2.380051,-0.321629 2.508702,1.415166 2.508702,1.415166 0,0 0.698447,0.888873 -0.321627,2.508703 -1.020075,1.61983 -3.602242,4.374149 -3.602242,4.374149 z"
-         id="path19" />
-      <path
-         id="lpe_path-effect19"
-         style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-         class="powerclip"
-         d="M -5.0000021,-5.0000021 H 72.733332 V 72.733332 H -5.0000021 Z m 64.2439911,20.0522211 2.766007,8.941275 c 0,0 2.582167,-2.754319 3.602242,-4.374149 1.020074,-1.61983 0.321627,-2.508703 0.321627,-2.508703 0,0 -0.128651,-1.736795 -2.508702,-1.415166 -2.380052,0.321629 -4.181174,-0.643257 -4.181174,-0.643257 z" />
-    </clipPath>
-  </defs>
+     id="defs1" />
   <g
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-size:40.6803px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';opacity:0.75;fill:none;stroke:#000000;stroke-width:0.635631;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-       x="0.29747242"
-       y="46.380627"
+       style="font-size:44.9799px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';opacity:0.75;fill:#26a69a;fill-opacity:1;stroke:#26a69a;stroke-width:0.703;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="-3.2505367"
+       y="47.703259"
        id="text1"><tspan
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Yellowtail;-inkscape-font-specification:Yellowtail;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.635631;stroke-dasharray:none;stroke-opacity:1"
-         x="0.29747242"
-         y="46.380627">CM</tspan></text>
-    <path
-       id="path3"
-       style="opacity:0.75;fill:none;stroke:#000000;stroke-width:1.31255;paint-order:stroke fill markers"
-       d="m 67.077057,33.866665 c 0,18.341593 -14.868799,33.210392 -33.210392,33.210392 -18.341593,0 -33.21039211,-14.868799 -33.21039211,-33.210392 -6e-8,-18.341593 14.86879911,-33.21039211 33.21039211,-33.21039211 11.40281,0 21.463385,5.74679331 27.443449,14.50210411 1.826802,2.674591 3.272814,5.629935 4.259974,8.78797 0.979247,3.132718 1.506969,6.46489 1.506969,9.920318 z"
-       clip-path="url(#clipPath19)" />
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Yellowtail;-inkscape-font-specification:Yellowtail;fill:#26a69a;fill-opacity:1;stroke:#26a69a;stroke-width:0.703;stroke-dasharray:none;stroke-opacity:1"
+         x="-3.2505367"
+         y="47.703259">CM</tspan></text>
   </g>
 </svg>
