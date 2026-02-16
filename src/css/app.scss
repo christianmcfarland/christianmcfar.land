@@ -25,10 +25,13 @@
 
 body {
   font-family: 'roboto-light';
+  background: #0b1421;
+  color: #eef4fb;
 }
 
 p {
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 .q-btn__content {
@@ -37,4 +40,8 @@ p {
 
 .text-overline {
   font-family: 'roboto-medium';
+}
+
+a {
+  color: inherit;
 }
