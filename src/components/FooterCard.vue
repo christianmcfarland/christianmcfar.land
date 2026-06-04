@@ -21,13 +21,6 @@
         </a>
         <a
           target="_blank"
-          href="https://github.com/christianmcfarland"
-          aria-label="GitHub"
-        >
-          <q-icon color="grey-4" size="sm" name="fa-brands fa-github" />
-        </a>
-        <a
-          target="_blank"
           href="mailto:christianmcfarland@gmail.com"
           aria-label="Email"
         >

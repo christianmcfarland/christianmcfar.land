@@ -2,30 +2,26 @@
   <q-page class="portfolio-page">
     <section class="hero content-wrap">
       <p class="eyebrow">Web Developer</p>
-      <h1>
-        Building practical web products that solve real workflow problems.
-      </h1>
+      <h1>Christian McFarland</h1>
       <p class="hero-copy">
-        Full-stack developer with 9+ years building and shipping web
-        applications and internal tools across healthcare and B2B SaaS. Strong
-        in API design and modern front ends, with a focus on clarity,
-        performance, and maintainability.
+        Web developer with 9+ years experience building production web
+        applications across healthcare and B2B SaaS.
       </p>
       <div class="row cta-row">
         <q-btn
-          href="#projects"
+          href="mailto:christianmcfarland@gmail.com"
           color="secondary"
           unelevated
           no-caps
-          label="View Projects"
+          label="Start a Project"
         />
         <q-btn
-          href="https://github.com/christianmcfarland"
+          href="/resume.pdf"
           target="_blank"
           outline
           color="grey-3"
           no-caps
-          label="GitHub"
+          label="Download Resume"
         />
         <q-btn
           href="https://www.linkedin.com/in/christian-mcfarland-98a18965"
@@ -38,86 +34,30 @@
       </div>
     </section>
 
-    <section id="projects" class="content-wrap section">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <q-card
-          v-for="project in featuredProjects"
-          :key="project.name"
-          flat
-          bordered
-          class="project-card"
-        >
-          <q-card-section>
-            <div class="row items-center justify-between project-head">
-              <h3 class="text-h6 q-ma-none">{{ project.name }}</h3>
-              <!-- <q-badge color="secondary" :label="project.status" /> -->
-            </div>
-          </q-card-section>
-
-          <q-card-section>
-            <p>{{ project.description }}</p>
-          </q-card-section>
-
-          <q-card-section class="q-pt-none">
-            <div class="row chip-row">
-              <q-chip
-                v-for="item in project.stack"
-                :key="`${project.name}-${item}`"
-                dense
-                square
-                color="blue-grey-10"
-                text-color="grey-3"
-              >
-                {{ item }}
-              </q-chip>
-            </div>
-          </q-card-section>
-
-          <q-card-actions class="q-pa-md q-pt-none">
-            <q-btn
-              v-if="project.liveUrl"
-              :href="project.liveUrl"
-              target="_blank"
-              color="secondary"
-              unelevated
-              no-caps
-              label="Live Link"
-            />
-            <q-btn
-              v-if="project.repoUrl"
-              :href="project.repoUrl"
-              target="_blank"
-              flat
-              color="grey-4"
-              no-caps
-              label="Code"
-            />
-            <span v-if="!project.liveUrl" class="muted-text">
-              Live link to be added
-            </span>
-          </q-card-actions>
-        </q-card>
-      </div>
-    </section>
-
     <section id="skills" class="content-wrap section">
-      <h2>Core Skills</h2>
-      <div
-        class="skills-categories"
-        @mouseleave="setHoveredSkillCategory(null)"
-      >
+      <h2>Skills &amp; tools</h2>
+      <div class="skills-categories">
+        <button
+          class="category-pill"
+          type="button"
+          :class="{
+            'category-pill--active': selectedSkillCategory === null,
+          }"
+          :aria-pressed="selectedSkillCategory === null"
+          @click="selectSkillCategory(null)"
+        >
+          All
+        </button>
         <button
           v-for="group in skillGroups"
           :key="group.title"
           class="category-pill"
           type="button"
           :class="{
-            'category-pill--active': hoveredSkillCategory === group.title,
+            'category-pill--active': selectedSkillCategory === group.title,
           }"
-          @mouseenter="setHoveredSkillCategory(group.title)"
-          @focus="setHoveredSkillCategory(group.title)"
-          @blur="setHoveredSkillCategory(null)"
+          :aria-pressed="selectedSkillCategory === group.title"
+          @click="selectSkillCategory(group.title)"
         >
           {{ group.title }}
         </button>
@@ -131,10 +71,11 @@
             'skill-chip',
             {
               'skill-chip--active':
-                !hoveredSkillCategory ||
-                skill.category === hoveredSkillCategory,
+                !selectedSkillCategory ||
+                skill.category === selectedSkillCategory,
               'skill-chip--inactive':
-                hoveredSkillCategory && skill.category !== hoveredSkillCategory,
+                selectedSkillCategory &&
+                skill.category !== selectedSkillCategory,
             },
           ]"
         >
@@ -144,7 +85,7 @@
     </section>
 
     <section id="experience" class="content-wrap section">
-      <h2>Experience Snapshot</h2>
+      <h2>Experience</h2>
       <div class="experience-list">
         <q-card
           v-for="item in experienceItems"
@@ -200,8 +141,8 @@
     <section id="contact" class="content-wrap section section-last">
       <h2>Contact</h2>
       <p>
-        I am open to web development opportunities where I can contribute to
-        product delivery, frontend architecture, and customer-facing outcomes.
+        I am open to work including WordPress site/plugin audits, custom plugin
+        development, and ongoing support.
       </p>
       <div class="row cta-row">
         <q-btn
@@ -217,7 +158,7 @@
           outline
           color="grey-3"
           no-caps
-          label="Open Resume"
+          label="Download Resume"
         />
       </div>
     </section>
@@ -226,13 +167,9 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import {
-  experienceItems,
-  featuredProjects,
-  skillGroups,
-} from 'src/constants/siteContent';
+import { experienceItems, skillGroups } from 'src/constants/siteContent';
 
-const hoveredSkillCategory = ref<string | null>(null);
+const selectedSkillCategory = ref<string | null>(null);
 
 const orderedSkills = computed(() =>
   skillGroups.flatMap((group) =>
@@ -243,8 +180,8 @@ const orderedSkills = computed(() =>
   )
 );
 
-const setHoveredSkillCategory = (category: string | null): void => {
-  hoveredSkillCategory.value = category;
+const selectSkillCategory = (category: string | null): void => {
+  selectedSkillCategory.value = category;
 };
 </script>
 
@@ -275,14 +212,16 @@ const setHoveredSkillCategory = (category: string | null): void => {
 
 h1 {
   font-family: 'roboto-semibold';
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(1.85rem, 4vw, 2.85rem);
   line-height: 1.1;
   margin: 0;
-  max-width: 16ch;
+  max-width: none;
 }
 
 h2 {
   font-family: 'roboto-semibold';
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  line-height: 1.2;
   margin: 0 0 1rem;
 }
 
@@ -298,17 +237,6 @@ h2 {
 
 .section-last {
   padding-bottom: 2rem;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
-.project-card {
-  background: rgba(15, 29, 45, 0.85);
-  border-color: rgba(151, 181, 211, 0.22);
 }
 
 .skills-categories {
@@ -385,10 +313,6 @@ h2 {
   gap: 0.6rem;
 }
 
-.project-head {
-  gap: 0.6rem;
-}
-
 .experience-head {
   gap: 0.6rem;
 }
@@ -399,10 +323,5 @@ h2 {
 
 p {
   color: #cfdbeb;
-}
-
-.muted-text {
-  color: #9eb3c8;
-  font-size: 0.9rem;
 }
 </style>

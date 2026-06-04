@@ -3,8 +3,7 @@
     <a class="brand text-h6" href="/">Christian McFarland</a>
 
     <div class="desktop-nav row items-center">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Skills &amp; tools</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
