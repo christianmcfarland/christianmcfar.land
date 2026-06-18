@@ -141,8 +141,9 @@
     <section id="contact" class="content-wrap section section-last">
       <h2>Contact</h2>
       <p>
-        I am open to work including WordPress site/plugin audits, custom plugin
-        development, and ongoing support.
+        I’m open to full-time SaaS/product engineering roles and select
+        WordPress contract work, including custom plugins, platform
+        improvements, and ongoing support.
       </p>
       <div class="row cta-row">
         <q-btn
