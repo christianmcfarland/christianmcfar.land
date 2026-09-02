@@ -13,7 +13,7 @@
           color="secondary"
           unelevated
           no-caps
-          label="Start a Project"
+          label="Email Me"
         />
         <q-btn
           href="/resume.pdf"
