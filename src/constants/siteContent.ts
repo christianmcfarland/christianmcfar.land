@@ -76,22 +76,22 @@ export const skillGroups: SkillGroup[] = [
 
 export const experienceItems: ExperienceItem[] = [
   {
-    company: 'Resonate Health, LLC',
-    location: 'Remote, Part-time',
-    role: 'WordPress Developer',
-    dates: '07/2025 - Present',
+    company: 'Self Employed',
+    location: 'Remote',
+    role: 'Full Stack Engineer',
+    dates: '01/2024 - Present',
     bullets: [
-      'Own end-to-end delivery of product features for a WordPress-based healthcare platform, turning ambiguous requirements into scoped work, intuitive user experience, and maintainable custom plugins. (WordPress, PHP, JS, CSS, REST API)',
-      'Designed and implemented an AI-powered knowledge layer: ingestion + chunking pipeline, embeddings, vector search, and a secured external service, integrated back into WordPress via authenticated endpoints. (Ollama, Qdrant)',
+      'Design, build, and maintain responsive web applications for healthcare organizations and small businesses using React, Next.js, and TypeScript.',
+      'Develop full-stack functionality spanning reusable UI components, server-side logic, API integrations, and PostgreSQL data models.',
+      'Manage projects from requirements gathering and technical planning through testing, deployment, ongoing maintenance, and client support.',
     ],
     stack: [
-      'WordPress',
-      'PHP',
-      'JavaScript',
-      'WP REST API',
-      'Ollama',
-      'Qdrant',
-      'Node.js',
+      'React',
+      'Next.js',
+      'TypeScript',
+      'PostgreSQL',
+      'API Integrations',
+      'Project Delivery',
     ],
   },
   {
