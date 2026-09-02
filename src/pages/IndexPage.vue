@@ -140,11 +140,7 @@
 
     <section id="contact" class="content-wrap section section-last">
       <h2>Contact</h2>
-      <p>
-        I’m open to full-time SaaS/product engineering roles and select
-        WordPress contract work, including custom plugins, platform
-        improvements, and ongoing support.
-      </p>
+      <p>I’m open to full-time SaaS/product engineering roles.</p>
       <div class="row cta-row">
         <q-btn
           href="mailto:christianmcfarland@gmail.com"

@@ -24,6 +24,7 @@ export const skillGroups: SkillGroup[] = [
       'React',
       'Next.js',
       'HTML/CSS',
+      'Tailwind CSS',
       'Responsive Web Development',
       'Component Library Development',
       'Figma',
@@ -33,13 +34,9 @@ export const skillGroups: SkillGroup[] = [
     title: 'Backend & APIs',
     skills: [
       'Node.js',
-      'PHP',
-      'WordPress',
       'REST API Design',
       'OpenAPI / Swagger',
       'API Integration',
-      'Python',
-      'Custom Plugin Development',
     ],
   },
   {
