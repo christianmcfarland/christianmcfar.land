@@ -4,8 +4,8 @@
       <p class="eyebrow">Web Developer</p>
       <h1>Christian McFarland</h1>
       <p class="hero-copy">
-        Web developer with 9+ years experience building production web
-        applications across healthcare and B2B SaaS.
+        Full-stack engineer with 8+ years building and modernizing production
+        web applications across healthcare, SaaS, and B2B ecommerce.
       </p>
       <div class="row cta-row">
         <q-btn
