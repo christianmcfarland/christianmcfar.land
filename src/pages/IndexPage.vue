@@ -1,10 +1,10 @@
 <template>
   <q-page class="portfolio-page">
     <section class="hero content-wrap">
-      <p class="eyebrow">Web Developer</p>
+      <p class="eyebrow">Software Engineer</p>
       <h1>Christian McFarland</h1>
       <p class="hero-copy">
-        Full-stack engineer with 8+ years building and modernizing production
+        Software engineer with 8+ years building and modernizing production
         web applications across healthcare, SaaS, and B2B ecommerce.
       </p>
       <div class="row cta-row">

@@ -67,7 +67,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     company: 'Self Employed',
     location: 'Remote',
-    role: 'Full Stack Engineer',
+    role: 'Software Engineer',
     dates: '08/2024 - Present',
     bullets: [
       'Design, build, and maintain full-stack web applications using React, Next.js, and TypeScript, styled with Tailwind CSS and styled-components.',
@@ -89,7 +89,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     company: 'CareValidate, Inc.',
     location: 'Remote, Full-time',
-    role: 'Front End Developer',
+    role: 'Software Engineer',
     dates: '02/2023 - 01/2024',
     bullets: [
       'Built and supported a production SaaS application end-to-end using Vue 3 with Composition API and Pinia, SCSS, and Quasar on the frontend, and Express with Prisma and Apollo/GraphQL on the backend.',
@@ -112,7 +112,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     company: 'ANDMORE (formerly International Market Centers)',
     location: 'Remote, Full-time',
-    role: 'Front End Developer',
+    role: 'Software Engineer',
     dates: '03/2020 - 11/2022',
     bullets: [
       'Delivered front-end features for a large B2B ecommerce ecosystem using Vue 3 with Composition API and Pinia plus custom SCSS, translating Figma designs into production UI and integrating REST APIs with Swagger/OpenAPI.',
@@ -133,7 +133,7 @@ export const experienceItems: ExperienceItem[] = [
   {
     company: 'RepZio, LLC',
     location: 'Juno Beach, FL, Full-time',
-    role: 'Front End Developer',
+    role: 'Software Engineer',
     dates: '02/2019 - 03/2020',
     bullets: [
       'Led a live migration of a production Vue 2 application using Options API and Vuex to Vue 3 with Composition API and Pinia with zero downtime for active customers.',
