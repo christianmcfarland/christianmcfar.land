@@ -17,6 +17,10 @@ import routes from './routes';
  * with the Router instance.
  */
 
+const setHeadAttr = (selector: string, attr: string, value: string): void => {
+  document.head.querySelector(selector)?.setAttribute(attr, value);
+};
+
 export default route(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER
     ? createMemoryHistory
@@ -33,6 +37,25 @@ export default route(function (/* { store, ssrContext } */) {
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.VUE_ROUTER_BASE),
+  });
+
+  Router.afterEach((to) => {
+    if (process.env.SERVER) return;
+
+    const title = to.meta.title as string | undefined;
+    const description = to.meta.description as string | undefined;
+    const url = `https://christianmcfar.land${to.path}`;
+
+    if (title) {
+      document.title = title;
+      setHeadAttr('meta[property="og:title"]', 'content', title);
+    }
+    if (description) {
+      setHeadAttr('meta[name="description"]', 'content', description);
+      setHeadAttr('meta[property="og:description"]', 'content', description);
+    }
+    setHeadAttr('meta[property="og:url"]', 'content', url);
+    setHeadAttr('link[rel="canonical"]', 'href', url);
   });
 
   return Router;
