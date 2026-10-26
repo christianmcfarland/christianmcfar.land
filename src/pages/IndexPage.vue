@@ -1,5 +1,5 @@
 <template>
-  <q-page class="portfolio-page">
+  <q-page class="site-page">
     <section class="hero content-wrap">
       <p class="eyebrow">Software Engineer</p>
       <h1>Christian McFarland</h1>
@@ -14,6 +14,13 @@
           unelevated
           no-caps
           label="Email Me"
+        />
+        <q-btn
+          to="/portfolio"
+          outline
+          color="grey-3"
+          no-caps
+          label="View Portfolio"
         />
         <q-btn
           href="/resume.pdf"
@@ -101,6 +108,9 @@
                 <p class="q-ma-none company-line">
                   {{ item.company }} | {{ item.location }}
                 </p>
+                <p v-if="item.note" class="q-ma-none company-note">
+                  {{ item.note }}
+                </p>
               </div>
               <div class="col-auto">
                 <q-badge
@@ -183,81 +193,11 @@ const selectSkillCategory = (category: string | null): void => {
 </script>
 
 <style scoped lang="scss">
-.portfolio-page {
-  color: #eef4fb;
-  padding-bottom: 2rem;
-}
-
-.content-wrap {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1.2rem 0;
-}
-
-.hero {
-  padding-top: 3.5rem;
-}
-
-.eyebrow {
-  letter-spacing: 0.12rem;
-  text-transform: uppercase;
-  color: #7fa4c8;
-  font-family: 'roboto-medium';
-  margin-bottom: 0.75rem;
-}
-
-h1 {
-  font-family: 'roboto-semibold';
-  font-size: clamp(1.85rem, 4vw, 2.85rem);
-  line-height: 1.1;
-  margin: 0;
-  max-width: none;
-}
-
-h2 {
-  font-family: 'roboto-semibold';
-  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
-  line-height: 1.2;
-  margin: 0 0 1rem;
-}
-
-.hero-copy {
-  color: #c8d5e3;
-  max-width: 68ch;
-  margin: 1rem 0 1.5rem;
-}
-
-.section {
-  margin-top: 2.2rem;
-}
-
-.section-last {
-  padding-bottom: 2rem;
-}
-
 .skills-categories {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-bottom: 0.85rem;
-}
-
-.category-pill {
-  border: 1px solid rgba(151, 181, 211, 0.32);
-  background: rgba(14, 29, 47, 0.65);
-  color: #bdd0e4;
-  border-radius: 999px;
-  padding: 0.45rem 0.85rem;
-  font-family: 'roboto-medium';
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.category-pill--active,
-.category-pill:hover {
-  border-color: rgba(98, 194, 168, 0.9);
-  color: #f3fffc;
 }
 
 .skills-list {
@@ -282,11 +222,6 @@ h2 {
   opacity: 0.58;
 }
 
-.snapshot-card {
-  background: rgba(15, 29, 45, 0.75);
-  border-color: rgba(151, 181, 211, 0.22);
-}
-
 .experience-list {
   display: grid;
   gap: 0.9rem;
@@ -296,29 +231,14 @@ h2 {
   color: #a9bdd2;
 }
 
-.bullet-list {
-  margin: 0;
-  padding-left: 1rem;
-  color: #cfdbeb;
-}
-
-.bullet-list li + li {
-  margin-top: 0.4rem;
-}
-
-.cta-row {
-  gap: 0.6rem;
+.company-note {
+  color: #8ea5bc;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 0.25rem;
 }
 
 .experience-head {
   gap: 0.6rem;
-}
-
-.chip-row {
-  gap: 0.4rem;
-}
-
-p {
-  color: #cfdbeb;
 }
 </style>

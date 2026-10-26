@@ -1,11 +1,12 @@
 <template>
   <q-toolbar class="header-toolbar q-px-md q-py-sm">
-    <a class="brand text-h6" href="/">Christian McFarland</a>
+    <router-link class="brand text-h6" to="/">Christian McFarland</router-link>
 
     <div class="desktop-nav row items-center">
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+      <router-link to="/portfolio">Portfolio</router-link>
+      <router-link to="/#skills">Skills</router-link>
+      <router-link to="/#experience">Experience</router-link>
+      <router-link to="/#contact">Contact</router-link>
     </div>
 
     <q-space />

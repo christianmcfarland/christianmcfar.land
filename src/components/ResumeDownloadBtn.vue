@@ -1,7 +1,7 @@
 <template>
   <q-btn
     href="/resume.pdf"
-    download="Christian-McFarland-Resume-2024.pdf"
+    download="Christian-McFarland-Resume.pdf"
     target="_blank"
     color="secondary"
     unelevated
